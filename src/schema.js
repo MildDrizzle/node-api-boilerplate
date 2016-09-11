@@ -18,11 +18,9 @@ const QueryType = new GraphQLObjectType({
     hello: {
       type: HelloType,
       description: 'Greeting.',
-      resolve: (parent, args, context, ast) => {
-        return {
-          world: 'Hello World!'
-        };
-      }
+      resolve: () => ({
+        world: 'Hello World!'
+      })
     }
   })
 });
