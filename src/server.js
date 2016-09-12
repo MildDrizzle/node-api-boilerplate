@@ -15,6 +15,5 @@ app.use('/graphql', graphqlHTTP(req => ({
 
 app.listen(PORT, err => {
   if (err) { return err; }
-
   console.log(`GraphQL server running on http://localhost:${PORT}/graphql`);
 });
