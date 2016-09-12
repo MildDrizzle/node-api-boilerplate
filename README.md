@@ -26,7 +26,7 @@ Execute `npm run build` to compile the files.
 
 Use `npm run clean` first if you have already created the *dist* folder and then execute `npm run build` to make sure it is a new full compilation.
 
-#### Start
+#### Serve
 
 Execute `npm run serve` to run the server and go to **[http://localhost:3000](http://localhost:3000)**. By default it will use port 3000, but you can pass whatever port you want, like `PORT=5000`.
 
