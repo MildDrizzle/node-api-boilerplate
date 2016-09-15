@@ -9,7 +9,8 @@
     "serve": "cross-env NODE_ENV=production node dist/index.js",
     "clean": "rimraf dist",
     "lint": "eslint src/**",
-    "test": "mocha --compilers js:babel-register \"+(test|src)/**/*.test.js\""
+    "test": "mocha --compilers js:babel-register \"+(test|src)/**/*.test.js\"",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --compilers js:babel-register \"+(test|src)/**/*.test.js\""
   },
   "repository": {
     "type": "git",
@@ -47,6 +48,7 @@
     "eslint-plugin-import": "^1.14.0",
     "eslint-plugin-jsx-a11y": "^2.2.1",
     "eslint-plugin-react": "^6.2.0",
+    "istanbul": "^1.0.0-alpha.2",
     "mocha": "^3.0.2",
     "nodemon": "^1.10.2",
     "rimraf": "^2.5.4",
