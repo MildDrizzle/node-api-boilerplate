@@ -1,7 +1,7 @@
 /* eslint-disable */
 import express from 'express';
 import graphqlHTTP from 'express-graphql';
-import schema from './schema';
+import schema from './graphql/schema';
 
 const app = express();
 const ENV = process.env.NODE_ENV;
