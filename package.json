@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/jferrettiboke/node-api-boilerplate#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-graphql": "^0.5.4",
     "graphql": "^0.7.0",
