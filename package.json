@@ -30,13 +30,16 @@
   },
   "homepage": "https://github.com/jferrettiboke/node-api-boilerplate#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-graphql": "^0.5.4",
     "graphql": "^0.7.0",
+    "jsonwebtoken": "^7.1.9",
     "mongoose": "^4.6.1",
     "nodemailer": "^2.6.0",
     "nunjucks": "^2.5.2",
+    "validator": "^6.0.0",
     "winston": "^2.2.0"
   },
   "devDependencies": {

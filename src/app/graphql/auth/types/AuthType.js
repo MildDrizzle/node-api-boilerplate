@@ -6,22 +6,18 @@ import {
 } from 'graphql';
 import ErrorType from '../../ErrorType';
 
-const UserType = new GraphQLObjectType({
-  name: 'User',
-  description: 'UserType.',
-  fields: {
+const AuthType = new GraphQLObjectType({
+  name: 'Auth',
+  description: 'AuthType.',
+  fields: () => ({
     errors: {
       type: new GraphQLNonNull(new GraphQLList(ErrorType))
     },
-    id: {
+    token: {
       type: GraphQLString,
-      description: 'User ID.'
-    },
-    email: {
-      type: GraphQLString,
-      description: 'User email.'
+      description: 'User token.'
     }
-  }
+  })
 });
 
-export default UserType;
+export default AuthType;

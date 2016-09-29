@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import graphqlHTTP from 'express-graphql';
 import schema from './graphql/schema';
+import { getTokenFromRequest } from './api/auth/utils';
 import config from './config';
 
 const app = express();
@@ -21,6 +22,9 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 
 app.use('/graphql', graphqlHTTP(req => ({
   schema,
+  context: {
+    token: getTokenFromRequest(req)
+  },
   pretty: true,
   graphiql: ENV !== 'production'
 })));
