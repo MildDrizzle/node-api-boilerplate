@@ -1,5 +1,7 @@
 # Node API Boilerplate
 
+[![Build Status](https://travis-ci.org/jferrettiboke/node-api-boilerplate.svg?branch=master)](https://travis-ci.org/jferrettiboke/node-api-boilerplate)
+
 ## Description
 
 An API boilerplate with Node.js, Express.js, GraphQL and many more.
